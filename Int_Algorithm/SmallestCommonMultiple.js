@@ -20,7 +20,7 @@ function smallestCommons(arr) {
   arr.sort(); //sorts the original array in case they weren't in order
   var j = 1; //scm multiplier counter
   for (var i = arr[0]+1;i<arr[1];i++) {
-    innerArr.push(i); // creates the range of array inside the original array
+    innerArr.push(i); // creates the range of numbers inside the original array
   }
   
   while (checkSCM(innerArr,currentScm)===false) {
